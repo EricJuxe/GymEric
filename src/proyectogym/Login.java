@@ -30,6 +30,14 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jRendererPanel1 = new org.jdesktop.swing.animation.rendering.JRendererPanel();
+        rSPasswordTextPlaceHolderBeanInfo1 = new rojerusan.RSPasswordTextPlaceHolderBeanInfo();
+        rSPasswordTextPlaceHolderBeanInfo2 = new rojerusan.RSPasswordTextPlaceHolderBeanInfo();
+        rSPasswordTextPlaceHolderBeanInfo3 = new rojerusan.RSPasswordTextPlaceHolderBeanInfo();
+        rSPasswordTextPlaceHolderBeanInfo4 = new rojerusan.RSPasswordTextPlaceHolderBeanInfo();
+        jRendererPanel2 = new org.jdesktop.swing.animation.rendering.JRendererPanel();
+        rSButtonIconD2 = new rojerusan.RSButtonIconD();
+        fSPasswordFieldMD1 = new LIB.FSPasswordFieldMD();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -44,6 +52,32 @@ public class Login extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jPasswordField1 = new javax.swing.JPasswordField();
         jLabel4 = new javax.swing.JLabel();
+
+        javax.swing.GroupLayout jRendererPanel1Layout = new javax.swing.GroupLayout(jRendererPanel1);
+        jRendererPanel1.setLayout(jRendererPanel1Layout);
+        jRendererPanel1Layout.setHorizontalGroup(
+            jRendererPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jRendererPanel1Layout.setVerticalGroup(
+            jRendererPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jRendererPanel2Layout = new javax.swing.GroupLayout(jRendererPanel2);
+        jRendererPanel2.setLayout(jRendererPanel2Layout);
+        jRendererPanel2Layout.setHorizontalGroup(
+            jRendererPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jRendererPanel2Layout.setVerticalGroup(
+            jRendererPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        rSButtonIconD2.setText("rSButtonIconD2");
+
+        fSPasswordFieldMD1.setText("fSPasswordFieldMD1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setType(java.awt.Window.Type.UTILITY);
@@ -252,6 +286,7 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private LIB.FSPasswordFieldMD fSPasswordFieldMD1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -265,6 +300,13 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPasswordField jPasswordField1;
+    private org.jdesktop.swing.animation.rendering.JRendererPanel jRendererPanel1;
+    private org.jdesktop.swing.animation.rendering.JRendererPanel jRendererPanel2;
     private javax.swing.JTextField jTextField1;
+    private rojerusan.RSButtonIconD rSButtonIconD2;
+    private rojerusan.RSPasswordTextPlaceHolderBeanInfo rSPasswordTextPlaceHolderBeanInfo1;
+    private rojerusan.RSPasswordTextPlaceHolderBeanInfo rSPasswordTextPlaceHolderBeanInfo2;
+    private rojerusan.RSPasswordTextPlaceHolderBeanInfo rSPasswordTextPlaceHolderBeanInfo3;
+    private rojerusan.RSPasswordTextPlaceHolderBeanInfo rSPasswordTextPlaceHolderBeanInfo4;
     // End of variables declaration//GEN-END:variables
 }
