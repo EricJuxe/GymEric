@@ -12,6 +12,7 @@ import Productos.PageProductos;
 import Clientes.PageClientes;
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
+import rsbuttom.RSButtonMetro;
 
 /**
  *
@@ -45,16 +46,15 @@ public class Menu extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         menu = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        rSButtonMetro1 = new rsbuttom.RSButtonMetro();
+        rSButtonMetro2 = new rsbuttom.RSButtonMetro();
+        rSButtonMetro3 = new rsbuttom.RSButtonMetro();
+        rSButtonMetro4 = new rsbuttom.RSButtonMetro();
+        rSButtonMetro5 = new rsbuttom.RSButtonMetro();
+        rSButtonMetro6 = new rsbuttom.RSButtonMetro();
         jPanel3 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
         content = new javax.swing.JPanel();
         panelencabezado = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
@@ -68,7 +68,7 @@ public class Menu extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(0, 0));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(230, 230, 230));
+        jPanel1.setBackground(new java.awt.Color(187, 187, 187));
         jPanel1.setPreferredSize(new java.awt.Dimension(150, 449));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -76,79 +76,95 @@ public class Menu extends javax.swing.JFrame {
         menu.setPreferredSize(new java.awt.Dimension(115, 435));
         menu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 24)); // NOI18N
+        jLabel1.setBackground(new java.awt.Color(10, 144, 203));
+        jLabel1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 32)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Opciones");
-        menu.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 1, 150, 47));
+        menu.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 160, 47));
 
-        jButton1.setText("PRINCIPAL");
-        jButton1.setBorder(null);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
-            }
-        });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        menu.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 56, 150, 47));
-
-        jButton2.setText("USUARIO");
-        jButton2.setBorder(null);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        menu.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 111, 150, 47));
-
-        jButton3.setText("REPORTES");
-        jButton3.setBorder(null);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        menu.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 150, 47));
-
-        jLabel2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 24)); // NOI18N
+        jLabel2.setBackground(new java.awt.Color(10, 144, 203));
+        jLabel2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 30)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("ventas");
-        menu.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 150, 47));
+        jLabel2.setText("Ventas");
+        menu.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 160, 47));
 
-        jButton4.setText("SERVICIOS");
-        jButton4.setBorder(null);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        rSButtonMetro1.setBackground(new java.awt.Color(10, 144, 203));
+        rSButtonMetro1.setText("PRINCIPAL");
+        rSButtonMetro1.setColorHover(new java.awt.Color(40, 112, 176));
+        rSButtonMetro1.setColorNormal(new java.awt.Color(10, 144, 203));
+        rSButtonMetro1.setColorPressed(new java.awt.Color(10, 144, 203));
+        rSButtonMetro1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                rSButtonMetro1ActionPerformed(evt);
             }
         });
-        menu.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 150, 47));
+        menu.add(rSButtonMetro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 180, 60));
 
-        jButton5.setText("PRODUCTOS");
-        jButton5.setBorder(null);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        rSButtonMetro2.setBackground(new java.awt.Color(10, 144, 203));
+        rSButtonMetro2.setText("USUARIO");
+        rSButtonMetro2.setColorHover(new java.awt.Color(40, 112, 176));
+        rSButtonMetro2.setColorNormal(new java.awt.Color(10, 144, 203));
+        rSButtonMetro2.setColorPressed(new java.awt.Color(10, 144, 203));
+        rSButtonMetro2.setMaximumSize(new java.awt.Dimension(81, 17));
+        rSButtonMetro2.setMinimumSize(new java.awt.Dimension(81, 17));
+        rSButtonMetro2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                rSButtonMetro2ActionPerformed(evt);
             }
         });
-        menu.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 380, 150, 47));
+        menu.add(rSButtonMetro2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 180, 60));
 
-        jButton6.setText("CLIENTES");
-        jButton6.setBorder(null);
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        rSButtonMetro3.setBackground(new java.awt.Color(10, 144, 203));
+        rSButtonMetro3.setText("CLIENTES");
+        rSButtonMetro3.setColorHover(new java.awt.Color(40, 112, 176));
+        rSButtonMetro3.setColorNormal(new java.awt.Color(10, 144, 203));
+        rSButtonMetro3.setColorPressed(new java.awt.Color(10, 144, 203));
+        rSButtonMetro3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                rSButtonMetro3ActionPerformed(evt);
             }
         });
-        menu.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 166, 150, 47));
+        menu.add(rSButtonMetro3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 180, 60));
 
-        jPanel1.add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 150, 440));
+        rSButtonMetro4.setBackground(new java.awt.Color(10, 144, 203));
+        rSButtonMetro4.setText("REPORTES");
+        rSButtonMetro4.setColorHover(new java.awt.Color(40, 112, 176));
+        rSButtonMetro4.setColorNormal(new java.awt.Color(10, 144, 203));
+        rSButtonMetro4.setColorPressed(new java.awt.Color(10, 144, 203));
+        rSButtonMetro4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonMetro4ActionPerformed(evt);
+            }
+        });
+        menu.add(rSButtonMetro4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 180, 60));
+
+        rSButtonMetro5.setBackground(new java.awt.Color(10, 144, 203));
+        rSButtonMetro5.setText("SERVICIOS");
+        rSButtonMetro5.setColorHover(new java.awt.Color(40, 112, 176));
+        rSButtonMetro5.setColorNormal(new java.awt.Color(10, 144, 203));
+        rSButtonMetro5.setColorPressed(new java.awt.Color(10, 144, 203));
+        rSButtonMetro5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonMetro5ActionPerformed(evt);
+            }
+        });
+        menu.add(rSButtonMetro5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 180, 60));
+
+        rSButtonMetro6.setBackground(new java.awt.Color(10, 144, 203));
+        rSButtonMetro6.setText("PRODUCTOS");
+        rSButtonMetro6.setColorHover(new java.awt.Color(40, 112, 176));
+        rSButtonMetro6.setColorNormal(new java.awt.Color(10, 144, 203));
+        rSButtonMetro6.setColorPressed(new java.awt.Color(10, 144, 203));
+        rSButtonMetro6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonMetro6ActionPerformed(evt);
+            }
+        });
+        menu.add(rSButtonMetro6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 180, 60));
+
+        jPanel1.add(menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 490));
 
         jPanel3.setBackground(new java.awt.Color(10, 144, 203));
 
@@ -176,21 +192,6 @@ public class Menu extends javax.swing.JFrame {
         );
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 520, 180, 60));
-
-        jPanel4.setBackground(new java.awt.Color(10, 144, 203));
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 180, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 20, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 86, 180, 610));
 
@@ -230,13 +231,13 @@ public class Menu extends javax.swing.JFrame {
         panelencabezadoLayout.setHorizontalGroup(
             panelencabezadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelencabezadoLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
+                .addGap(17, 17, 17)
                 .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(63, 63, 63)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(66, 66, 66)
                 .addComponent(jLabel6)
-                .addContainerGap(907, Short.MAX_VALUE))
+                .addContainerGap(799, Short.MAX_VALUE))
         );
         panelencabezadoLayout.setVerticalGroup(
             panelencabezadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -256,10 +257,14 @@ public class Menu extends javax.swing.JFrame {
 
     private void rSButtonMetro2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonMetro2ActionPerformed
         // TODO add your handling code here:
+        PageUsuario p2 = new PageUsuario();
+       ShowPanel(p2);
     }//GEN-LAST:event_rSButtonMetro2ActionPerformed
 
     private void rSButtonMetro6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonMetro6ActionPerformed
         // TODO add your handling code here:
+        PageProductos p6 = new PageProductos();
+        ShowPanel(p6);
     }//GEN-LAST:event_rSButtonMetro6ActionPerformed
 
     private void rSButtonMetro7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonMetro7ActionPerformed
@@ -270,52 +275,35 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_rSButtonMetro8ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        PageUsuario p2 = new PageUsuario();
-       ShowPanel(p2);
-        
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1MouseClicked
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        PagePrincipal p1 = new PagePrincipal();
-        ShowPanel(p1);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-        PageClientes p3 = new PageClientes();
-        ShowPanel(p3);
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-        PageReportes p4 = new PageReportes();
-        ShowPanel(p4);
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-        PageServicios p5 = new PageServicios();
-        ShowPanel(p5);
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-        PageProductos p6 = new PageProductos();
-        ShowPanel(p6);
-    }//GEN-LAST:event_jButton5ActionPerformed
-
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
         // TODO add your handling code here:
         System.exit(0);
         
     }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void rSButtonMetro4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonMetro4ActionPerformed
+        // TODO add your handling code here:
+        PageReportes p4 = new PageReportes();
+        ShowPanel(p4);
+    }//GEN-LAST:event_rSButtonMetro4ActionPerformed
+
+    private void rSButtonMetro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonMetro1ActionPerformed
+        // TODO add your handling code here:
+        PagePrincipal p1 = new PagePrincipal();
+        ShowPanel(p1);
+    }//GEN-LAST:event_rSButtonMetro1ActionPerformed
+
+    private void rSButtonMetro3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonMetro3ActionPerformed
+        // TODO add your handling code here:
+        PageClientes p3 = new PageClientes();
+        ShowPanel(p3);
+    }//GEN-LAST:event_rSButtonMetro3ActionPerformed
+
+    private void rSButtonMetro5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonMetro5ActionPerformed
+        // TODO add your handling code here:
+        PageServicios p5 = new PageServicios();
+        ShowPanel(p5);
+    }//GEN-LAST:event_rSButtonMetro5ActionPerformed
 
     private void ShowPanel(JPanel p){
         
@@ -376,12 +364,6 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel content;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -390,9 +372,14 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JPanel menu;
     private javax.swing.JPanel panelencabezado;
+    private rsbuttom.RSButtonMetro rSButtonMetro1;
+    private rsbuttom.RSButtonMetro rSButtonMetro2;
+    private rsbuttom.RSButtonMetro rSButtonMetro3;
+    private rsbuttom.RSButtonMetro rSButtonMetro4;
+    private rsbuttom.RSButtonMetro rSButtonMetro5;
+    private rsbuttom.RSButtonMetro rSButtonMetro6;
     // End of variables declaration//GEN-END:variables
 }

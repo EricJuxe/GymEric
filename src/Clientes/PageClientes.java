@@ -49,7 +49,9 @@ public class PageClientes extends javax.swing.JPanel {
         jPanel1.setMinimumSize(new java.awt.Dimension(1190, 90));
         jPanel1.setPreferredSize(new java.awt.Dimension(1190, 90));
 
+        jLabel1.setBackground(new java.awt.Color(230, 230, 230));
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("CLIENTES");
 
         jLabel10.setBackground(new java.awt.Color(230, 230, 230));
@@ -151,8 +153,6 @@ public class PageClientes extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
